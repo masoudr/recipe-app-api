@@ -1,0 +1,3 @@
+docker-compose.exe run app sh -c "python manage.py test"
+docker-compose.exe run app sh -c "python manage.py makemigrations core"
+
