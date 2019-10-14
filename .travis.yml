@@ -11,4 +11,6 @@ script:
   - docker-compose run app sh -c "coverage run --source='.' manage.py test && flake8"
 
 after_success:
+  - cd app/
+  - coverage combine
   - coveralls
